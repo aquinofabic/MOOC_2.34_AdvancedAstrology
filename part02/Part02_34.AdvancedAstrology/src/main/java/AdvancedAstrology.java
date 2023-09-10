@@ -32,20 +32,20 @@ public class AdvancedAstrology {
         int stars = 1;
         int spaces = height - 1;
         int baseSpace = height - 2;
+        int i = 0;
 
 
-        for (int i = 0; i < height; i++) {
+        for (i = 0; i < height; i++) {
             printSpaces(spaces);
             spaces--;
             printStars(stars);
-            stars+=2;
-            System.out.println("");
+            stars += 2;
+            System.out.println("");;
         }
-        for (int i = 0; i< 2; i++) {
+        for (i = 0; i < 2; i++) {
             printSpaces(baseSpace);
             printStars(3);
             System.out.println("");
-
         }
 
     }
