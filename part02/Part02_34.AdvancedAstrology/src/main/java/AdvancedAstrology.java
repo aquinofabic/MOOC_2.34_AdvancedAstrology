@@ -1,4 +1,3 @@
-
 public class AdvancedAstrology {
 
     public static void printStars(int number) {
@@ -31,17 +30,18 @@ public class AdvancedAstrology {
     public static void christmasTree(int height) {
         int stars = -1;
         int spaces = height - 1;
-        int baseSpace = height - 2;
         int i = 0;
 
-
+        // create the tree
         for (i = 0; i < height; i++) {
             printSpaces(spaces--);
-            printStars(stars+=2);
-            System.out.println();;
+            printStars(stars += 2);
+            System.out.println();
+            ;
         }
+        // create the base
         for (i = 0; i < 2; i++) {
-            printSpaces(baseSpace);
+            printSpaces(height - 2);
             printStars(3);
             System.out.println();
         }
