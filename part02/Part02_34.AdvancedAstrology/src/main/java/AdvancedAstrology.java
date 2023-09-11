@@ -23,29 +23,27 @@ public class AdvancedAstrology {
         while (i <= size) {
             printSpaces(height--);
             printStars(i++);
-            System.out.println("");
+            System.out.println();
         }
 
     }
 
     public static void christmasTree(int height) {
-        int stars = 1;
+        int stars = -1;
         int spaces = height - 1;
         int baseSpace = height - 2;
         int i = 0;
 
 
         for (i = 0; i < height; i++) {
-            printSpaces(spaces);
-            spaces--;
-            printStars(stars);
-            stars += 2;
-            System.out.println("");;
+            printSpaces(spaces--);
+            printStars(stars+=2);
+            System.out.println();;
         }
         for (i = 0; i < 2; i++) {
             printSpaces(baseSpace);
             printStars(3);
-            System.out.println("");
+            System.out.println();
         }
 
     }
